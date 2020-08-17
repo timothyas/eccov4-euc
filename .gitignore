@@ -1,8 +1,14 @@
 # Ignore html converted notebooks by default
 *.html
 
-# Figures ignore by default
+# Ignore powerpoint and word docs by default because they're big
+*.numbers
+*.key
+*.pages
+
+# Figures and pdfignore by default
 *.png
+*.pdf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

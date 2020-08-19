@@ -1,3 +1,10 @@
+
+# Project specific directories
+masks140W*
+
+# Ignore netcdf files
+*.nc
+
 # Ignore html converted notebooks by default
 *.html
 

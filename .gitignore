@@ -1,6 +1,9 @@
 
 # Project specific directories
 masks140W*
+MITgcm
+*build/*
+run*
 
 # Ignore netcdf files
 *.nc

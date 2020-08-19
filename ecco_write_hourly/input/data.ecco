@@ -1,0 +1,44 @@
+#
+#
+# ******************
+# ECCO cost function
+# ******************
+#
+ &ECCO_COST_NML
+#
+ cost_iprec  = 32,
+ cost_yftype = 'RL',
+#
+ /
+#
+ &ECCO_GENCOST_NML
+#
+# --- EUC at 140W
+# note: first ECCO takes only positive! to get EUC
+#
+ gencost_name(1)        = 'euc140W',
+ gencost_avgperiod(1)   = 'monthly',
+ gencost_barfile(1)     = 'm_horflux_vol',
+ gencost_mask(1)        = 'eucMask'
+ gencost_outputlevel(1) = 1,
+ mult_gencost(1)        = 1,
+#
+# --- Uvel at 140W, 75m depth
+#
+ gencost_name(2)        = 'uvel140W_75m',
+ gencost_avgperiod(2)   = 'monthly',
+ gencost_barfile(2)     = 'm_horflux_vol',
+ gencost_mask(2)        = 'uvel_75m_mask'
+ gencost_outputlevel(2) = 1,
+ mult_gencost(2)        = 0,
+#
+# --- Vvel at 140W, 75m depth
+#
+ gencost_name(3)        = 'vvel140W_75m',
+ gencost_avgperiod(3)   = 'monthly',
+ gencost_barfile(3)     = 'm_horflux_vol',
+ gencost_mask(3)        = 'vvel_75m_mask'
+ gencost_outputlevel(3) = 1,
+ mult_gencost(3)        = 0,
+ /
+#

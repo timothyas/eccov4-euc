@@ -310,6 +310,11 @@ c now summing
 
 #ifdef ALLOW_GENCOST_CONTRIBUTION
 
+
+
+
+      do kgen=1,NGENCOST
+
 Cts   EUC Hack: Init
       global_euc = 0. _d 0
       do bj=myByLo(myThid),myByHi(myThid)
@@ -317,10 +322,6 @@ Cts   EUC Hack: Init
         tile_euc(bi,bj) = 0. _d 0
        enddo
       enddo
-
-
-      do kgen=1,NGENCOST
-
       itr = gencost_itracer(kgen)
 
       call ecco_zero(gencost_storefld(1-OLx,1-OLy,1,1,kgen),
@@ -428,7 +429,7 @@ C           positive
               if ((uVel(i,j,k,bi,bj)*tmpmskW).gt.0. )
      &          tile_euc(bi,bj) = tile_euc(bi,bj)
      &              +uVel(i,j,k,bi,bj)*tmpmskW
-              if ((vVel(i,j,k,bi,bj)*tmpmskW).gt.0. )
+              if ((vVel(i,j,k,bi,bj)*tmpmskS).gt.0. )
      &          tile_euc(bi,bj) = tile_euc(bi,bj)
      &              +vVel(i,j,k,bi,bj)*tmpmskS
             else

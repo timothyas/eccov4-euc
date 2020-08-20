@@ -3,20 +3,15 @@
 ## Set up suffix for adjoint run: "_ad"
 #  or leave as "" for forward run
 suff=""
-build_suff=""
-input_suff=""
-run_suff=""
+build_suff=".192"
+input_suff=".192"
+run_suff=".192.short"
 use_masks="true"
 use_perturbation=""
 use_extra_ctrls=""
 use_ecco_ctrls="true"
 use_ecco_binaries="true"
 use_ecco_obs=""
-
-## Processor info
-snx=30
-sny=30
-nprocs=192
 
 ## Set up directories
 root_dir=$WORK/eccov4-euc/MITgcm
@@ -28,7 +23,12 @@ run_dir=$SCRATCH/eccov4-euc/ecco_write_hourly/run$suff$run_suff
 wk_dir=$exp_dir/run$suff$run_suff
 input_dir=$exp_dir/input$suff$input_suff
 
-submit_script=$exp_dir/submit_scratch$suff
+if [[ $build_suff == ".192" ]] ; then
+    submit_script=submit_scratch_192$suff
+else
+    submit_script=submit_scratch$suff
+fi
+submit_script_path=$exp_dir/$submit_script
 
 ## Set optional directories 
 masks_dir=$exp_dir/masks140W
@@ -61,8 +61,8 @@ echo "Grabbing necessary files ..."
 #-------------------------------------------------
 # Submission script
 #-------------------------------------------------
-cp $submit_script $run_dir
-sed -i "s/workrun=/workrun=\$WORK\/eccov4\-euc\/ecco_write_hourly\/run${suff}${run_suff}/g" $run_dir/submit_scratch$suff
+cp $submit_script_path $run_dir
+sed -i "s/workrun=/workrun=\$WORK\/eccov4\-euc\/ecco_write_hourly\/run${suff}${run_suff}/g" $run_dir/$submit_script
 
 #-------------------------------------------------
 # Executable

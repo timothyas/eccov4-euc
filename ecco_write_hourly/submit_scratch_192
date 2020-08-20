@@ -3,10 +3,10 @@
 #SBATCH -J eucv4r4140W
 #SBATCH -o eucv4r4140W.%j.out
 #SBATCH -e eucv4r4140W.%j.err
-#SBATCH -N 2
-#SBATCH -n 96
-#SBATCH -p skx-normal
-#SBATCH -t 10:00:00
+#SBATCH -N 4
+#SBATCH -n 192
+#SBATCH -p skx-dev
+#SBATCH -t 2:00:00
 #SBATCH -A Polar-Project
 
 #SBATCH --mail-user=timsmith204@utexas.edu
@@ -15,7 +15,7 @@
 
 export workrun=
 
-ibrun -np 96 tacc_affinity ./mitgcmuv
+ibrun -np 192 tacc_affinity ./mitgcmuv
 
 cp STDOUT.0000 $workrun
 cp -r diags $workrun

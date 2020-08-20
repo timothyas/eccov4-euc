@@ -4,24 +4,19 @@
 #  or leave as "" for forward run
 suff=""
 ecco_suff=""
-build_suff=
+build_suff=".192"
 
 ## Set up directories
 root_dir=$WORK/eccov4-euc/MITgcm
 exp_dir=$PWD
-build_dir=$exp_dir/build$suff$ecco_suff$build_suff
+build_dir=$exp_dir/build$suff$build_suff
 code_dir=$exp_dir/code$suff$build_suff
-ecco_code=$exp_dir/code$ecco_suff
 
 ## Opt file architecture specific
 skylake_opt=$computing/optfiles/linux_amd64_ifort+mpi_stampede2_skx
 
 ## Use the correct opt file here
-if [[ $suff == "_ftl" ]] ; then
-    build_cmd="$root_dir/tools/genmake2 -rd=$root_dir -mods='$code_dir $ecco_code' -optfile=$skylake_opt -mpi"
-else
-    build_cmd="$root_dir/tools/genmake2 -rd=$root_dir -mods=$ecco_code -optfile=$skylake_opt -mpi"
-fi
+build_cmd="$root_dir/tools/genmake2 -rd=$root_dir -mods=$code_dir -optfile=$skylake_opt -mpi"
 #tmp="make_junk"$suff".txt"
 
 ## Build the model in build directory

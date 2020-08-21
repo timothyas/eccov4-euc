@@ -1,12 +1,15 @@
 
 # Project specific directories
 masks140W*
+
+# MITgcm related
 MITgcm
 *build*
 run*
 
-# Ignore netcdf files
+# Output
 *.nc
+mdsfiles
 
 # Ignore html converted notebooks by default
 *.html

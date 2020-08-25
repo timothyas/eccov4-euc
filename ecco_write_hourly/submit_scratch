@@ -18,7 +18,5 @@ export workrun=
 ibrun -np 96 tacc_affinity ./mitgcmuv
 
 cp STDOUT.0000 $workrun
-cp -r diags $workrun
 cp -r ${SLURM_JOB_NAME}* $workrun
-cp pickup* $workrun
 cp euc_out* $workrun

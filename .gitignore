@@ -1,15 +1,16 @@
 
 # Project specific directories
 masks140W*
-
-# MITgcm related
+masks_all_lon*
 MITgcm
 *build*
 run*
+pickup*
 
 # Output
 *.nc
 mdsfiles
+*.tar.gz
 
 # Ignore html converted notebooks by default
 *.html

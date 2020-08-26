@@ -5,7 +5,7 @@
 suff=""
 build_suff=".192"
 input_suff=".192"
-run_suff=".192.short"
+run_suff=".192"
 use_masks="true"
 use_perturbation=""
 use_extra_ctrls=""
@@ -31,7 +31,7 @@ fi
 submit_script_path=$exp_dir/$submit_script
 
 ## Set optional directories 
-masks_dir=$exp_dir/masks140W
+masks_dir=$exp_dir/masks_all_lon
 perturb_dir=
 ctrl_dir=
 binary_dir=$crios_dir/llc90/global/eccov4r4/input_init
@@ -137,7 +137,7 @@ fi
 if [ "$use_masks" == "true" ] ; then
     if [ -d $masks_dir ] ; then
         echo "** Grabbing masks ..."
-        ln -sf $masks_dir/* $run_dir
+        ln -sf $masks_dir $run_dir
     else
       echo "** No masks found in $masks_dir ... "
     fi

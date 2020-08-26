@@ -423,21 +423,9 @@ c
             endif
 
 Cts         EUC Hack
-C           super hack! if kgen=1, assume we want EUC, so only take
-C           positive
-            if (kgen.eq.1) then
-              if ((uVel(i,j,k,bi,bj)*tmpmskW).gt.0. )
-     &          tile_euc(bi,bj) = tile_euc(bi,bj)
-     &              +uVel(i,j,k,bi,bj)*tmpmskW
-              if ((vVel(i,j,k,bi,bj)*tmpmskS).gt.0. )
-     &          tile_euc(bi,bj) = tile_euc(bi,bj)
-     &              +vVel(i,j,k,bi,bj)*tmpmskS
-            else
-                
               tile_euc(bi,bj) = tile_euc(bi,bj)
      &          +uVel(i,j,k,bi,bj)*tmpmskW2
      &          +vVel(i,j,k,bi,bj)*tmpmskS2
-            endif
 
           enddo
 c---------
@@ -448,7 +436,7 @@ c---------
 
 Cts   EUC Hack: sum tile to global scalar
       CALL GLOBAL_SUM_TILE_RL( tile_euc, global_euc, myThid )
-      WRITE(msgBuf,'(A,I2.2,A,1PE21.14)')
+      WRITE(msgBuf,'(A,I3.3,A,1PE21.14)')
      &  'EUC kgen(',kgen,'): ',global_euc 
       CALL PRINT_MESSAGE( msgBuf, standardMessageUnit,
      &                    SQUEEZE_RIGHT, myThid )
@@ -456,7 +444,7 @@ Cts   EUC Hack: sum tile to global scalar
 Cts   Write to mds file
       _BEGIN_MASTER(myThid)
 C-    multi-threaded: only write it once (by master thread)
-      WRITE(fName,'(A,I2.2,A,I10.10)') 'euc_out.',kgen,'.', nIter0
+      WRITE(fName,'(A,I3.3,A,I10.10)') 'euc_out.',kgen,'.', nIter0
       ioUnit  = 0
       CALL MDS_WRITEVEC_LOC(
      I          fName, precFloat64, ioUnit,

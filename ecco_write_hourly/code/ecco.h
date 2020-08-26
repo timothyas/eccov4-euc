@@ -192,7 +192,7 @@ c     =============================
 c     Number of Generic Cost terms:
 c     =============================
       INTEGER NGENCOST
-      PARAMETER ( NGENCOST=3 )
+      PARAMETER ( NGENCOST=132 )
 
       INTEGER NGENCOST3D
 #ifdef ALLOW_GENCOST3D

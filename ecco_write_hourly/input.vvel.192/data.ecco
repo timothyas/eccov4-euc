@@ -1,0 +1,949 @@
+#
+# ******************
+# ECCO cost function
+# ******************
+#
+ &ECCO_COST_NML
+ cost_iprec  = 32,
+ cost_yftype = 'RL',
+ /
+#
+ &ECCO_GENCOST_NML
+#
+# --- 110W
+#
+ gencost_name(1)        = 'vvel_110W_00k',
+ gencost_avgperiod(1)   = 'const',
+ gencost_barfile(1)     = 'm_horflux_vol',
+ gencost_mask(1)        = 'masks_all_lon_vvel/vvel_110W_00k_'
+ gencost_outputlevel(1) = 0,
+ mult_gencost(1)        = 1,
+#
+ gencost_name(2)        = 'vvel_110W_01k',
+ gencost_avgperiod(2)   = 'const',
+ gencost_barfile(2)     = 'm_horflux_vol',
+ gencost_mask(2)        = 'masks_all_lon_vvel/vvel_110W_01k_'
+ gencost_outputlevel(2) = 0,
+ mult_gencost(2)        = 1,
+#
+ gencost_name(3)        = 'vvel_110W_02k',
+ gencost_avgperiod(3)   = 'const',
+ gencost_barfile(3)     = 'm_horflux_vol',
+ gencost_mask(3)        = 'masks_all_lon_vvel/vvel_110W_02k_'
+ gencost_outputlevel(3) = 0,
+ mult_gencost(3)        = 1,
+#
+ gencost_name(4)        = 'vvel_110W_03k',
+ gencost_avgperiod(4)   = 'const',
+ gencost_barfile(4)     = 'm_horflux_vol',
+ gencost_mask(4)        = 'masks_all_lon_vvel/vvel_110W_03k_'
+ gencost_outputlevel(4) = 0,
+ mult_gencost(4)        = 1,
+#
+ gencost_name(5)        = 'vvel_110W_04k',
+ gencost_avgperiod(5)   = 'const',
+ gencost_barfile(5)     = 'm_horflux_vol',
+ gencost_mask(5)        = 'masks_all_lon_vvel/vvel_110W_04k_'
+ gencost_outputlevel(5) = 0,
+ mult_gencost(5)        = 1,
+#
+ gencost_name(6)        = 'vvel_110W_05k',
+ gencost_avgperiod(6)   = 'const',
+ gencost_barfile(6)     = 'm_horflux_vol',
+ gencost_mask(6)        = 'masks_all_lon_vvel/vvel_110W_05k_'
+ gencost_outputlevel(6) = 0,
+ mult_gencost(6)        = 1,
+#
+ gencost_name(7)        = 'vvel_110W_06k',
+ gencost_avgperiod(7)   = 'const',
+ gencost_barfile(7)     = 'm_horflux_vol',
+ gencost_mask(7)        = 'masks_all_lon_vvel/vvel_110W_06k_'
+ gencost_outputlevel(7) = 0,
+ mult_gencost(7)        = 1,
+#
+ gencost_name(8)        = 'vvel_110W_07k',
+ gencost_avgperiod(8)   = 'const',
+ gencost_barfile(8)     = 'm_horflux_vol',
+ gencost_mask(8)        = 'masks_all_lon_vvel/vvel_110W_07k_'
+ gencost_outputlevel(8) = 0,
+ mult_gencost(8)        = 1,
+#
+ gencost_name(9)        = 'vvel_110W_08k',
+ gencost_avgperiod(9)   = 'const',
+ gencost_barfile(9)     = 'm_horflux_vol',
+ gencost_mask(9)        = 'masks_all_lon_vvel/vvel_110W_08k_'
+ gencost_outputlevel(9) = 0,
+ mult_gencost(9)        = 1,
+#
+ gencost_name(10)        = 'vvel_110W_09k',
+ gencost_avgperiod(10)   = 'const',
+ gencost_barfile(10)     = 'm_horflux_vol',
+ gencost_mask(10)        = 'masks_all_lon_vvel/vvel_110W_09k_'
+ gencost_outputlevel(10) = 0,
+ mult_gencost(10)        = 1,
+#
+ gencost_name(11)        = 'vvel_110W_10k',
+ gencost_avgperiod(11)   = 'const',
+ gencost_barfile(11)     = 'm_horflux_vol',
+ gencost_mask(11)        = 'masks_all_lon_vvel/vvel_110W_10k_'
+ gencost_outputlevel(11) = 0,
+ mult_gencost(11)        = 1,
+#
+ gencost_name(12)        = 'vvel_110W_11k',
+ gencost_avgperiod(12)   = 'const',
+ gencost_barfile(12)     = 'm_horflux_vol',
+ gencost_mask(12)        = 'masks_all_lon_vvel/vvel_110W_11k_'
+ gencost_outputlevel(12) = 0,
+ mult_gencost(12)        = 1,
+#
+ gencost_name(13)        = 'vvel_110W_12k',
+ gencost_avgperiod(13)   = 'const',
+ gencost_barfile(13)     = 'm_horflux_vol',
+ gencost_mask(13)        = 'masks_all_lon_vvel/vvel_110W_12k_'
+ gencost_outputlevel(13) = 0,
+ mult_gencost(13)        = 1,
+#
+ gencost_name(14)        = 'vvel_110W_13k',
+ gencost_avgperiod(14)   = 'const',
+ gencost_barfile(14)     = 'm_horflux_vol',
+ gencost_mask(14)        = 'masks_all_lon_vvel/vvel_110W_13k_'
+ gencost_outputlevel(14) = 0,
+ mult_gencost(14)        = 1,
+#
+ gencost_name(15)        = 'vvel_110W_14k',
+ gencost_avgperiod(15)   = 'const',
+ gencost_barfile(15)     = 'm_horflux_vol',
+ gencost_mask(15)        = 'masks_all_lon_vvel/vvel_110W_14k_'
+ gencost_outputlevel(15) = 0,
+ mult_gencost(15)        = 1,
+#
+ gencost_name(16)        = 'vvel_110W_15k',
+ gencost_avgperiod(16)   = 'const',
+ gencost_barfile(16)     = 'm_horflux_vol',
+ gencost_mask(16)        = 'masks_all_lon_vvel/vvel_110W_15k_'
+ gencost_outputlevel(16) = 0,
+ mult_gencost(16)        = 1,
+#
+ gencost_name(17)        = 'vvel_110W_16k',
+ gencost_avgperiod(17)   = 'const',
+ gencost_barfile(17)     = 'm_horflux_vol',
+ gencost_mask(17)        = 'masks_all_lon_vvel/vvel_110W_16k_'
+ gencost_outputlevel(17) = 0,
+ mult_gencost(17)        = 1,
+#
+ gencost_name(18)        = 'vvel_110W_17k',
+ gencost_avgperiod(18)   = 'const',
+ gencost_barfile(18)     = 'm_horflux_vol',
+ gencost_mask(18)        = 'masks_all_lon_vvel/vvel_110W_17k_'
+ gencost_outputlevel(18) = 0,
+ mult_gencost(18)        = 1,
+#
+ gencost_name(19)        = 'vvel_110W_18k',
+ gencost_avgperiod(19)   = 'const',
+ gencost_barfile(19)     = 'm_horflux_vol',
+ gencost_mask(19)        = 'masks_all_lon_vvel/vvel_110W_18k_'
+ gencost_outputlevel(19) = 0,
+ mult_gencost(19)        = 1,
+#
+ gencost_name(20)        = 'vvel_110W_19k',
+ gencost_avgperiod(20)   = 'const',
+ gencost_barfile(20)     = 'm_horflux_vol',
+ gencost_mask(20)        = 'masks_all_lon_vvel/vvel_110W_19k_'
+ gencost_outputlevel(20) = 0,
+ mult_gencost(20)        = 1,
+#
+ gencost_name(21)        = 'vvel_110W_20k',
+ gencost_avgperiod(21)   = 'const',
+ gencost_barfile(21)     = 'm_horflux_vol',
+ gencost_mask(21)        = 'masks_all_lon_vvel/vvel_110W_20k_'
+ gencost_outputlevel(21) = 0,
+ mult_gencost(21)        = 1,
+#
+ gencost_name(22)        = 'vvel_110W_21k',
+ gencost_avgperiod(22)   = 'const',
+ gencost_barfile(22)     = 'm_horflux_vol',
+ gencost_mask(22)        = 'masks_all_lon_vvel/vvel_110W_21k_'
+ gencost_outputlevel(22) = 0,
+ mult_gencost(22)        = 1,
+#
+# --- 140W
+#
+ gencost_name(23)        = 'vvel_140W_00k',
+ gencost_avgperiod(23)   = 'const',
+ gencost_barfile(23)     = 'm_horflux_vol',
+ gencost_mask(23)        = 'masks_all_lon_vvel/vvel_140W_00k_'
+ gencost_outputlevel(23) = 0,
+ mult_gencost(23)        = 1,
+#
+ gencost_name(24)        = 'vvel_140W_01k',
+ gencost_avgperiod(24)   = 'const',
+ gencost_barfile(24)     = 'm_horflux_vol',
+ gencost_mask(24)        = 'masks_all_lon_vvel/vvel_140W_01k_'
+ gencost_outputlevel(24) = 0,
+ mult_gencost(24)        = 1,
+#
+ gencost_name(25)        = 'vvel_140W_02k',
+ gencost_avgperiod(25)   = 'const',
+ gencost_barfile(25)     = 'm_horflux_vol',
+ gencost_mask(25)        = 'masks_all_lon_vvel/vvel_140W_02k_'
+ gencost_outputlevel(25) = 0,
+ mult_gencost(25)        = 1,
+#
+ gencost_name(26)        = 'vvel_140W_03k',
+ gencost_avgperiod(26)   = 'const',
+ gencost_barfile(26)     = 'm_horflux_vol',
+ gencost_mask(26)        = 'masks_all_lon_vvel/vvel_140W_03k_'
+ gencost_outputlevel(26) = 0,
+ mult_gencost(26)        = 1,
+#
+ gencost_name(27)        = 'vvel_140W_04k',
+ gencost_avgperiod(27)   = 'const',
+ gencost_barfile(27)     = 'm_horflux_vol',
+ gencost_mask(27)        = 'masks_all_lon_vvel/vvel_140W_04k_'
+ gencost_outputlevel(27) = 0,
+ mult_gencost(27)        = 1,
+#
+ gencost_name(28)        = 'vvel_140W_05k',
+ gencost_avgperiod(28)   = 'const',
+ gencost_barfile(28)     = 'm_horflux_vol',
+ gencost_mask(28)        = 'masks_all_lon_vvel/vvel_140W_05k_'
+ gencost_outputlevel(28) = 0,
+ mult_gencost(28)        = 1,
+#
+ gencost_name(29)        = 'vvel_140W_06k',
+ gencost_avgperiod(29)   = 'const',
+ gencost_barfile(29)     = 'm_horflux_vol',
+ gencost_mask(29)        = 'masks_all_lon_vvel/vvel_140W_06k_'
+ gencost_outputlevel(29) = 0,
+ mult_gencost(29)        = 1,
+#
+ gencost_name(30)        = 'vvel_140W_07k',
+ gencost_avgperiod(30)   = 'const',
+ gencost_barfile(30)     = 'm_horflux_vol',
+ gencost_mask(30)        = 'masks_all_lon_vvel/vvel_140W_07k_'
+ gencost_outputlevel(30) = 0,
+ mult_gencost(30)        = 1,
+#
+ gencost_name(31)        = 'vvel_140W_08k',
+ gencost_avgperiod(31)   = 'const',
+ gencost_barfile(31)     = 'm_horflux_vol',
+ gencost_mask(31)        = 'masks_all_lon_vvel/vvel_140W_08k_'
+ gencost_outputlevel(31) = 0,
+ mult_gencost(31)        = 1,
+#
+ gencost_name(32)        = 'vvel_140W_09k',
+ gencost_avgperiod(32)   = 'const',
+ gencost_barfile(32)     = 'm_horflux_vol',
+ gencost_mask(32)        = 'masks_all_lon_vvel/vvel_140W_09k_'
+ gencost_outputlevel(32) = 0,
+ mult_gencost(32)        = 1,
+#
+ gencost_name(33)        = 'vvel_140W_10k',
+ gencost_avgperiod(33)   = 'const',
+ gencost_barfile(33)     = 'm_horflux_vol',
+ gencost_mask(33)        = 'masks_all_lon_vvel/vvel_140W_10k_'
+ gencost_outputlevel(33) = 0,
+ mult_gencost(33)        = 1,
+#
+ gencost_name(34)        = 'vvel_140W_11k',
+ gencost_avgperiod(34)   = 'const',
+ gencost_barfile(34)     = 'm_horflux_vol',
+ gencost_mask(34)        = 'masks_all_lon_vvel/vvel_140W_11k_'
+ gencost_outputlevel(34) = 0,
+ mult_gencost(34)        = 1,
+#
+ gencost_name(35)        = 'vvel_140W_12k',
+ gencost_avgperiod(35)   = 'const',
+ gencost_barfile(35)     = 'm_horflux_vol',
+ gencost_mask(35)        = 'masks_all_lon_vvel/vvel_140W_12k_'
+ gencost_outputlevel(35) = 0,
+ mult_gencost(35)        = 1,
+#
+ gencost_name(36)        = 'vvel_140W_13k',
+ gencost_avgperiod(36)   = 'const',
+ gencost_barfile(36)     = 'm_horflux_vol',
+ gencost_mask(36)        = 'masks_all_lon_vvel/vvel_140W_13k_'
+ gencost_outputlevel(36) = 0,
+ mult_gencost(36)        = 1,
+#
+ gencost_name(37)        = 'vvel_140W_14k',
+ gencost_avgperiod(37)   = 'const',
+ gencost_barfile(37)     = 'm_horflux_vol',
+ gencost_mask(37)        = 'masks_all_lon_vvel/vvel_140W_14k_'
+ gencost_outputlevel(37) = 0,
+ mult_gencost(37)        = 1,
+#
+ gencost_name(38)        = 'vvel_140W_15k',
+ gencost_avgperiod(38)   = 'const',
+ gencost_barfile(38)     = 'm_horflux_vol',
+ gencost_mask(38)        = 'masks_all_lon_vvel/vvel_140W_15k_'
+ gencost_outputlevel(38) = 0,
+ mult_gencost(38)        = 1,
+#
+ gencost_name(39)        = 'vvel_140W_16k',
+ gencost_avgperiod(39)   = 'const',
+ gencost_barfile(39)     = 'm_horflux_vol',
+ gencost_mask(39)        = 'masks_all_lon_vvel/vvel_140W_16k_'
+ gencost_outputlevel(39) = 0,
+ mult_gencost(39)        = 1,
+#
+ gencost_name(40)        = 'vvel_140W_17k',
+ gencost_avgperiod(40)   = 'const',
+ gencost_barfile(40)     = 'm_horflux_vol',
+ gencost_mask(40)        = 'masks_all_lon_vvel/vvel_140W_17k_'
+ gencost_outputlevel(40) = 0,
+ mult_gencost(40)        = 1,
+#
+ gencost_name(41)        = 'vvel_140W_18k',
+ gencost_avgperiod(41)   = 'const',
+ gencost_barfile(41)     = 'm_horflux_vol',
+ gencost_mask(41)        = 'masks_all_lon_vvel/vvel_140W_18k_'
+ gencost_outputlevel(41) = 0,
+ mult_gencost(41)        = 1,
+#
+ gencost_name(42)        = 'vvel_140W_19k',
+ gencost_avgperiod(42)   = 'const',
+ gencost_barfile(42)     = 'm_horflux_vol',
+ gencost_mask(42)        = 'masks_all_lon_vvel/vvel_140W_19k_'
+ gencost_outputlevel(42) = 0,
+ mult_gencost(42)        = 1,
+#
+ gencost_name(43)        = 'vvel_140W_20k',
+ gencost_avgperiod(43)   = 'const',
+ gencost_barfile(43)     = 'm_horflux_vol',
+ gencost_mask(43)        = 'masks_all_lon_vvel/vvel_140W_20k_'
+ gencost_outputlevel(43) = 0,
+ mult_gencost(43)        = 1,
+#
+ gencost_name(44)        = 'vvel_140W_21k',
+ gencost_avgperiod(44)   = 'const',
+ gencost_barfile(44)     = 'm_horflux_vol',
+ gencost_mask(44)        = 'masks_all_lon_vvel/vvel_140W_21k_'
+ gencost_outputlevel(44) = 0,
+ mult_gencost(44)        = 1,
+#
+# --- 170W
+#
+ gencost_name(45)        = 'vvel_170W_00k',
+ gencost_avgperiod(45)   = 'const',
+ gencost_barfile(45)     = 'm_horflux_vol',
+ gencost_mask(45)        = 'masks_all_lon_vvel/vvel_170W_00k_'
+ gencost_outputlevel(45) = 0,
+ mult_gencost(45)        = 1,
+#
+ gencost_name(46)        = 'vvel_170W_01k',
+ gencost_avgperiod(46)   = 'const',
+ gencost_barfile(46)     = 'm_horflux_vol',
+ gencost_mask(46)        = 'masks_all_lon_vvel/vvel_170W_01k_'
+ gencost_outputlevel(46) = 0,
+ mult_gencost(46)        = 1,
+#
+ gencost_name(47)        = 'vvel_170W_02k',
+ gencost_avgperiod(47)   = 'const',
+ gencost_barfile(47)     = 'm_horflux_vol',
+ gencost_mask(47)        = 'masks_all_lon_vvel/vvel_170W_02k_'
+ gencost_outputlevel(47) = 0,
+ mult_gencost(47)        = 1,
+#
+ gencost_name(48)        = 'vvel_170W_03k',
+ gencost_avgperiod(48)   = 'const',
+ gencost_barfile(48)     = 'm_horflux_vol',
+ gencost_mask(48)        = 'masks_all_lon_vvel/vvel_170W_03k_'
+ gencost_outputlevel(48) = 0,
+ mult_gencost(48)        = 1,
+#
+ gencost_name(49)        = 'vvel_170W_04k',
+ gencost_avgperiod(49)   = 'const',
+ gencost_barfile(49)     = 'm_horflux_vol',
+ gencost_mask(49)        = 'masks_all_lon_vvel/vvel_170W_04k_'
+ gencost_outputlevel(49) = 0,
+ mult_gencost(49)        = 1,
+#
+ gencost_name(50)        = 'vvel_170W_05k',
+ gencost_avgperiod(50)   = 'const',
+ gencost_barfile(50)     = 'm_horflux_vol',
+ gencost_mask(50)        = 'masks_all_lon_vvel/vvel_170W_05k_'
+ gencost_outputlevel(50) = 0,
+ mult_gencost(50)        = 1,
+#
+ gencost_name(51)        = 'vvel_170W_06k',
+ gencost_avgperiod(51)   = 'const',
+ gencost_barfile(51)     = 'm_horflux_vol',
+ gencost_mask(51)        = 'masks_all_lon_vvel/vvel_170W_06k_'
+ gencost_outputlevel(51) = 0,
+ mult_gencost(51)        = 1,
+#
+ gencost_name(52)        = 'vvel_170W_07k',
+ gencost_avgperiod(52)   = 'const',
+ gencost_barfile(52)     = 'm_horflux_vol',
+ gencost_mask(52)        = 'masks_all_lon_vvel/vvel_170W_07k_'
+ gencost_outputlevel(52) = 0,
+ mult_gencost(52)        = 1,
+#
+ gencost_name(53)        = 'vvel_170W_08k',
+ gencost_avgperiod(53)   = 'const',
+ gencost_barfile(53)     = 'm_horflux_vol',
+ gencost_mask(53)        = 'masks_all_lon_vvel/vvel_170W_08k_'
+ gencost_outputlevel(53) = 0,
+ mult_gencost(53)        = 1,
+#
+ gencost_name(54)        = 'vvel_170W_09k',
+ gencost_avgperiod(54)   = 'const',
+ gencost_barfile(54)     = 'm_horflux_vol',
+ gencost_mask(54)        = 'masks_all_lon_vvel/vvel_170W_09k_'
+ gencost_outputlevel(54) = 0,
+ mult_gencost(54)        = 1,
+#
+ gencost_name(55)        = 'vvel_170W_10k',
+ gencost_avgperiod(55)   = 'const',
+ gencost_barfile(55)     = 'm_horflux_vol',
+ gencost_mask(55)        = 'masks_all_lon_vvel/vvel_170W_10k_'
+ gencost_outputlevel(55) = 0,
+ mult_gencost(55)        = 1,
+#
+ gencost_name(56)        = 'vvel_170W_11k',
+ gencost_avgperiod(56)   = 'const',
+ gencost_barfile(56)     = 'm_horflux_vol',
+ gencost_mask(56)        = 'masks_all_lon_vvel/vvel_170W_11k_'
+ gencost_outputlevel(56) = 0,
+ mult_gencost(56)        = 1,
+#
+ gencost_name(57)        = 'vvel_170W_12k',
+ gencost_avgperiod(57)   = 'const',
+ gencost_barfile(57)     = 'm_horflux_vol',
+ gencost_mask(57)        = 'masks_all_lon_vvel/vvel_170W_12k_'
+ gencost_outputlevel(57) = 0,
+ mult_gencost(57)        = 1,
+#
+ gencost_name(58)        = 'vvel_170W_13k',
+ gencost_avgperiod(58)   = 'const',
+ gencost_barfile(58)     = 'm_horflux_vol',
+ gencost_mask(58)        = 'masks_all_lon_vvel/vvel_170W_13k_'
+ gencost_outputlevel(58) = 0,
+ mult_gencost(58)        = 1,
+#
+ gencost_name(59)        = 'vvel_170W_14k',
+ gencost_avgperiod(59)   = 'const',
+ gencost_barfile(59)     = 'm_horflux_vol',
+ gencost_mask(59)        = 'masks_all_lon_vvel/vvel_170W_14k_'
+ gencost_outputlevel(59) = 0,
+ mult_gencost(59)        = 1,
+#
+ gencost_name(60)        = 'vvel_170W_15k',
+ gencost_avgperiod(60)   = 'const',
+ gencost_barfile(60)     = 'm_horflux_vol',
+ gencost_mask(60)        = 'masks_all_lon_vvel/vvel_170W_15k_'
+ gencost_outputlevel(60) = 0,
+ mult_gencost(60)        = 1,
+#
+ gencost_name(61)        = 'vvel_170W_16k',
+ gencost_avgperiod(61)   = 'const',
+ gencost_barfile(61)     = 'm_horflux_vol',
+ gencost_mask(61)        = 'masks_all_lon_vvel/vvel_170W_16k_'
+ gencost_outputlevel(61) = 0,
+ mult_gencost(61)        = 1,
+#
+ gencost_name(62)        = 'vvel_170W_17k',
+ gencost_avgperiod(62)   = 'const',
+ gencost_barfile(62)     = 'm_horflux_vol',
+ gencost_mask(62)        = 'masks_all_lon_vvel/vvel_170W_17k_'
+ gencost_outputlevel(62) = 0,
+ mult_gencost(62)        = 1,
+#
+ gencost_name(63)        = 'vvel_170W_18k',
+ gencost_avgperiod(63)   = 'const',
+ gencost_barfile(63)     = 'm_horflux_vol',
+ gencost_mask(63)        = 'masks_all_lon_vvel/vvel_170W_18k_'
+ gencost_outputlevel(63) = 0,
+ mult_gencost(63)        = 1,
+#
+ gencost_name(64)        = 'vvel_170W_19k',
+ gencost_avgperiod(64)   = 'const',
+ gencost_barfile(64)     = 'm_horflux_vol',
+ gencost_mask(64)        = 'masks_all_lon_vvel/vvel_170W_19k_'
+ gencost_outputlevel(64) = 0,
+ mult_gencost(64)        = 1,
+#
+ gencost_name(65)        = 'vvel_170W_20k',
+ gencost_avgperiod(65)   = 'const',
+ gencost_barfile(65)     = 'm_horflux_vol',
+ gencost_mask(65)        = 'masks_all_lon_vvel/vvel_170W_20k_'
+ gencost_outputlevel(65) = 0,
+ mult_gencost(65)        = 1,
+#
+ gencost_name(66)        = 'vvel_170W_21k',
+ gencost_avgperiod(66)   = 'const',
+ gencost_barfile(66)     = 'm_horflux_vol',
+ gencost_mask(66)        = 'masks_all_lon_vvel/vvel_170W_21k_'
+ gencost_outputlevel(66) = 0,
+ mult_gencost(66)        = 1,
+#
+# --- 165E
+#
+ gencost_name(67)        = 'vvel_165E_00k',
+ gencost_avgperiod(67)   = 'const',
+ gencost_barfile(67)     = 'm_horflux_vol',
+ gencost_mask(67)        = 'masks_all_lon_vvel/vvel_165E_00k_'
+ gencost_outputlevel(67) = 0,
+ mult_gencost(67)        = 1,
+#
+ gencost_name(68)        = 'vvel_165E_01k',
+ gencost_avgperiod(68)   = 'const',
+ gencost_barfile(68)     = 'm_horflux_vol',
+ gencost_mask(68)        = 'masks_all_lon_vvel/vvel_165E_01k_'
+ gencost_outputlevel(68) = 0,
+ mult_gencost(68)        = 1,
+#
+ gencost_name(69)        = 'vvel_165E_02k',
+ gencost_avgperiod(69)   = 'const',
+ gencost_barfile(69)     = 'm_horflux_vol',
+ gencost_mask(69)        = 'masks_all_lon_vvel/vvel_165E_02k_'
+ gencost_outputlevel(69) = 0,
+ mult_gencost(69)        = 1,
+#
+ gencost_name(70)        = 'vvel_165E_03k',
+ gencost_avgperiod(70)   = 'const',
+ gencost_barfile(70)     = 'm_horflux_vol',
+ gencost_mask(70)        = 'masks_all_lon_vvel/vvel_165E_03k_'
+ gencost_outputlevel(70) = 0,
+ mult_gencost(70)        = 1,
+#
+ gencost_name(71)        = 'vvel_165E_04k',
+ gencost_avgperiod(71)   = 'const',
+ gencost_barfile(71)     = 'm_horflux_vol',
+ gencost_mask(71)        = 'masks_all_lon_vvel/vvel_165E_04k_'
+ gencost_outputlevel(71) = 0,
+ mult_gencost(71)        = 1,
+#
+ gencost_name(72)        = 'vvel_165E_05k',
+ gencost_avgperiod(72)   = 'const',
+ gencost_barfile(72)     = 'm_horflux_vol',
+ gencost_mask(72)        = 'masks_all_lon_vvel/vvel_165E_05k_'
+ gencost_outputlevel(72) = 0,
+ mult_gencost(72)        = 1,
+#
+ gencost_name(73)        = 'vvel_165E_06k',
+ gencost_avgperiod(73)   = 'const',
+ gencost_barfile(73)     = 'm_horflux_vol',
+ gencost_mask(73)        = 'masks_all_lon_vvel/vvel_165E_06k_'
+ gencost_outputlevel(73) = 0,
+ mult_gencost(73)        = 1,
+#
+ gencost_name(74)        = 'vvel_165E_07k',
+ gencost_avgperiod(74)   = 'const',
+ gencost_barfile(74)     = 'm_horflux_vol',
+ gencost_mask(74)        = 'masks_all_lon_vvel/vvel_165E_07k_'
+ gencost_outputlevel(74) = 0,
+ mult_gencost(74)        = 1,
+#
+ gencost_name(75)        = 'vvel_165E_08k',
+ gencost_avgperiod(75)   = 'const',
+ gencost_barfile(75)     = 'm_horflux_vol',
+ gencost_mask(75)        = 'masks_all_lon_vvel/vvel_165E_08k_'
+ gencost_outputlevel(75) = 0,
+ mult_gencost(75)        = 1,
+#
+ gencost_name(76)        = 'vvel_165E_09k',
+ gencost_avgperiod(76)   = 'const',
+ gencost_barfile(76)     = 'm_horflux_vol',
+ gencost_mask(76)        = 'masks_all_lon_vvel/vvel_165E_09k_'
+ gencost_outputlevel(76) = 0,
+ mult_gencost(76)        = 1,
+#
+ gencost_name(77)        = 'vvel_165E_10k',
+ gencost_avgperiod(77)   = 'const',
+ gencost_barfile(77)     = 'm_horflux_vol',
+ gencost_mask(77)        = 'masks_all_lon_vvel/vvel_165E_10k_'
+ gencost_outputlevel(77) = 0,
+ mult_gencost(77)        = 1,
+#
+ gencost_name(78)        = 'vvel_165E_11k',
+ gencost_avgperiod(78)   = 'const',
+ gencost_barfile(78)     = 'm_horflux_vol',
+ gencost_mask(78)        = 'masks_all_lon_vvel/vvel_165E_11k_'
+ gencost_outputlevel(78) = 0,
+ mult_gencost(78)        = 1,
+#
+ gencost_name(79)        = 'vvel_165E_12k',
+ gencost_avgperiod(79)   = 'const',
+ gencost_barfile(79)     = 'm_horflux_vol',
+ gencost_mask(79)        = 'masks_all_lon_vvel/vvel_165E_12k_'
+ gencost_outputlevel(79) = 0,
+ mult_gencost(79)        = 1,
+#
+ gencost_name(80)        = 'vvel_165E_13k',
+ gencost_avgperiod(80)   = 'const',
+ gencost_barfile(80)     = 'm_horflux_vol',
+ gencost_mask(80)        = 'masks_all_lon_vvel/vvel_165E_13k_'
+ gencost_outputlevel(80) = 0,
+ mult_gencost(80)        = 1,
+#
+ gencost_name(81)        = 'vvel_165E_14k',
+ gencost_avgperiod(81)   = 'const',
+ gencost_barfile(81)     = 'm_horflux_vol',
+ gencost_mask(81)        = 'masks_all_lon_vvel/vvel_165E_14k_'
+ gencost_outputlevel(81) = 0,
+ mult_gencost(81)        = 1,
+#
+ gencost_name(82)        = 'vvel_165E_15k',
+ gencost_avgperiod(82)   = 'const',
+ gencost_barfile(82)     = 'm_horflux_vol',
+ gencost_mask(82)        = 'masks_all_lon_vvel/vvel_165E_15k_'
+ gencost_outputlevel(82) = 0,
+ mult_gencost(82)        = 1,
+#
+ gencost_name(83)        = 'vvel_165E_16k',
+ gencost_avgperiod(83)   = 'const',
+ gencost_barfile(83)     = 'm_horflux_vol',
+ gencost_mask(83)        = 'masks_all_lon_vvel/vvel_165E_16k_'
+ gencost_outputlevel(83) = 0,
+ mult_gencost(83)        = 1,
+#
+ gencost_name(84)        = 'vvel_165E_17k',
+ gencost_avgperiod(84)   = 'const',
+ gencost_barfile(84)     = 'm_horflux_vol',
+ gencost_mask(84)        = 'masks_all_lon_vvel/vvel_165E_17k_'
+ gencost_outputlevel(84) = 0,
+ mult_gencost(84)        = 1,
+#
+ gencost_name(85)        = 'vvel_165E_18k',
+ gencost_avgperiod(85)   = 'const',
+ gencost_barfile(85)     = 'm_horflux_vol',
+ gencost_mask(85)        = 'masks_all_lon_vvel/vvel_165E_18k_'
+ gencost_outputlevel(85) = 0,
+ mult_gencost(85)        = 1,
+#
+ gencost_name(86)        = 'vvel_165E_19k',
+ gencost_avgperiod(86)   = 'const',
+ gencost_barfile(86)     = 'm_horflux_vol',
+ gencost_mask(86)        = 'masks_all_lon_vvel/vvel_165E_19k_'
+ gencost_outputlevel(86) = 0,
+ mult_gencost(86)        = 1,
+#
+ gencost_name(87)        = 'vvel_165E_20k',
+ gencost_avgperiod(87)   = 'const',
+ gencost_barfile(87)     = 'm_horflux_vol',
+ gencost_mask(87)        = 'masks_all_lon_vvel/vvel_165E_20k_'
+ gencost_outputlevel(87) = 0,
+ mult_gencost(87)        = 1,
+#
+ gencost_name(88)        = 'vvel_165E_21k',
+ gencost_avgperiod(88)   = 'const',
+ gencost_barfile(88)     = 'm_horflux_vol',
+ gencost_mask(88)        = 'masks_all_lon_vvel/vvel_165E_21k_'
+ gencost_outputlevel(88) = 0,
+ mult_gencost(88)        = 1,
+#
+# --- 156E
+#
+ gencost_name(89)        = 'vvel_156E_00k',
+ gencost_avgperiod(89)   = 'const',
+ gencost_barfile(89)     = 'm_horflux_vol',
+ gencost_mask(89)        = 'masks_all_lon_vvel/vvel_156E_00k_'
+ gencost_outputlevel(89) = 0,
+ mult_gencost(89)        = 1,
+#
+ gencost_name(90)        = 'vvel_156E_01k',
+ gencost_avgperiod(90)   = 'const',
+ gencost_barfile(90)     = 'm_horflux_vol',
+ gencost_mask(90)        = 'masks_all_lon_vvel/vvel_156E_01k_'
+ gencost_outputlevel(90) = 0,
+ mult_gencost(90)        = 1,
+#
+ gencost_name(91)        = 'vvel_156E_02k',
+ gencost_avgperiod(91)   = 'const',
+ gencost_barfile(91)     = 'm_horflux_vol',
+ gencost_mask(91)        = 'masks_all_lon_vvel/vvel_156E_02k_'
+ gencost_outputlevel(91) = 0,
+ mult_gencost(91)        = 1,
+#
+ gencost_name(92)        = 'vvel_156E_03k',
+ gencost_avgperiod(92)   = 'const',
+ gencost_barfile(92)     = 'm_horflux_vol',
+ gencost_mask(92)        = 'masks_all_lon_vvel/vvel_156E_03k_'
+ gencost_outputlevel(92) = 0,
+ mult_gencost(92)        = 1,
+#
+ gencost_name(93)        = 'vvel_156E_04k',
+ gencost_avgperiod(93)   = 'const',
+ gencost_barfile(93)     = 'm_horflux_vol',
+ gencost_mask(93)        = 'masks_all_lon_vvel/vvel_156E_04k_'
+ gencost_outputlevel(93) = 0,
+ mult_gencost(93)        = 1,
+#
+ gencost_name(94)        = 'vvel_156E_05k',
+ gencost_avgperiod(94)   = 'const',
+ gencost_barfile(94)     = 'm_horflux_vol',
+ gencost_mask(94)        = 'masks_all_lon_vvel/vvel_156E_05k_'
+ gencost_outputlevel(94) = 0,
+ mult_gencost(94)        = 1,
+#
+ gencost_name(95)        = 'vvel_156E_06k',
+ gencost_avgperiod(95)   = 'const',
+ gencost_barfile(95)     = 'm_horflux_vol',
+ gencost_mask(95)        = 'masks_all_lon_vvel/vvel_156E_06k_'
+ gencost_outputlevel(95) = 0,
+ mult_gencost(95)        = 1,
+#
+ gencost_name(96)        = 'vvel_156E_07k',
+ gencost_avgperiod(96)   = 'const',
+ gencost_barfile(96)     = 'm_horflux_vol',
+ gencost_mask(96)        = 'masks_all_lon_vvel/vvel_156E_07k_'
+ gencost_outputlevel(96) = 0,
+ mult_gencost(96)        = 1,
+#
+ gencost_name(97)        = 'vvel_156E_08k',
+ gencost_avgperiod(97)   = 'const',
+ gencost_barfile(97)     = 'm_horflux_vol',
+ gencost_mask(97)        = 'masks_all_lon_vvel/vvel_156E_08k_'
+ gencost_outputlevel(97) = 0,
+ mult_gencost(97)        = 1,
+#
+ gencost_name(98)        = 'vvel_156E_09k',
+ gencost_avgperiod(98)   = 'const',
+ gencost_barfile(98)     = 'm_horflux_vol',
+ gencost_mask(98)        = 'masks_all_lon_vvel/vvel_156E_09k_'
+ gencost_outputlevel(98) = 0,
+ mult_gencost(98)        = 1,
+#
+ gencost_name(99)        = 'vvel_156E_10k',
+ gencost_avgperiod(99)   = 'const',
+ gencost_barfile(99)     = 'm_horflux_vol',
+ gencost_mask(99)        = 'masks_all_lon_vvel/vvel_156E_10k_'
+ gencost_outputlevel(99) = 0,
+ mult_gencost(99)        = 1,
+#
+ gencost_name(100)        = 'vvel_156E_11k',
+ gencost_avgperiod(100)   = 'const',
+ gencost_barfile(100)     = 'm_horflux_vol',
+ gencost_mask(100)        = 'masks_all_lon_vvel/vvel_156E_11k_'
+ gencost_outputlevel(100) = 0,
+ mult_gencost(100)        = 1,
+#
+ gencost_name(101)        = 'vvel_156E_12k',
+ gencost_avgperiod(101)   = 'const',
+ gencost_barfile(101)     = 'm_horflux_vol',
+ gencost_mask(101)        = 'masks_all_lon_vvel/vvel_156E_12k_'
+ gencost_outputlevel(101) = 0,
+ mult_gencost(101)        = 1,
+#
+ gencost_name(102)        = 'vvel_156E_13k',
+ gencost_avgperiod(102)   = 'const',
+ gencost_barfile(102)     = 'm_horflux_vol',
+ gencost_mask(102)        = 'masks_all_lon_vvel/vvel_156E_13k_'
+ gencost_outputlevel(102) = 0,
+ mult_gencost(102)        = 1,
+#
+ gencost_name(103)        = 'vvel_156E_14k',
+ gencost_avgperiod(103)   = 'const',
+ gencost_barfile(103)     = 'm_horflux_vol',
+ gencost_mask(103)        = 'masks_all_lon_vvel/vvel_156E_14k_'
+ gencost_outputlevel(103) = 0,
+ mult_gencost(103)        = 1,
+#
+ gencost_name(104)        = 'vvel_156E_15k',
+ gencost_avgperiod(104)   = 'const',
+ gencost_barfile(104)     = 'm_horflux_vol',
+ gencost_mask(104)        = 'masks_all_lon_vvel/vvel_156E_15k_'
+ gencost_outputlevel(104) = 0,
+ mult_gencost(104)        = 1,
+#
+ gencost_name(105)        = 'vvel_156E_16k',
+ gencost_avgperiod(105)   = 'const',
+ gencost_barfile(105)     = 'm_horflux_vol',
+ gencost_mask(105)        = 'masks_all_lon_vvel/vvel_156E_16k_'
+ gencost_outputlevel(105) = 0,
+ mult_gencost(105)        = 1,
+#
+ gencost_name(106)        = 'vvel_156E_17k',
+ gencost_avgperiod(106)   = 'const',
+ gencost_barfile(106)     = 'm_horflux_vol',
+ gencost_mask(106)        = 'masks_all_lon_vvel/vvel_156E_17k_'
+ gencost_outputlevel(106) = 0,
+ mult_gencost(106)        = 1,
+#
+ gencost_name(107)        = 'vvel_156E_18k',
+ gencost_avgperiod(107)   = 'const',
+ gencost_barfile(107)     = 'm_horflux_vol',
+ gencost_mask(107)        = 'masks_all_lon_vvel/vvel_156E_18k_'
+ gencost_outputlevel(107) = 0,
+ mult_gencost(107)        = 1,
+#
+ gencost_name(108)        = 'vvel_156E_19k',
+ gencost_avgperiod(108)   = 'const',
+ gencost_barfile(108)     = 'm_horflux_vol',
+ gencost_mask(108)        = 'masks_all_lon_vvel/vvel_156E_19k_'
+ gencost_outputlevel(108) = 0,
+ mult_gencost(108)        = 1,
+#
+ gencost_name(109)        = 'vvel_156E_20k',
+ gencost_avgperiod(109)   = 'const',
+ gencost_barfile(109)     = 'm_horflux_vol',
+ gencost_mask(109)        = 'masks_all_lon_vvel/vvel_156E_20k_'
+ gencost_outputlevel(109) = 0,
+ mult_gencost(109)        = 1,
+#
+ gencost_name(110)        = 'vvel_156E_21k',
+ gencost_avgperiod(110)   = 'const',
+ gencost_barfile(110)     = 'm_horflux_vol',
+ gencost_mask(110)        = 'masks_all_lon_vvel/vvel_156E_21k_'
+ gencost_outputlevel(110) = 0,
+ mult_gencost(110)        = 1,
+#
+# --- 147E
+#
+ gencost_name(111)        = 'vvel_147E_00k',
+ gencost_avgperiod(111)   = 'const',
+ gencost_barfile(111)     = 'm_horflux_vol',
+ gencost_mask(111)        = 'masks_all_lon_vvel/vvel_147E_00k_'
+ gencost_outputlevel(111) = 0,
+ mult_gencost(111)        = 1,
+#
+ gencost_name(112)        = 'vvel_147E_01k',
+ gencost_avgperiod(112)   = 'const',
+ gencost_barfile(112)     = 'm_horflux_vol',
+ gencost_mask(112)        = 'masks_all_lon_vvel/vvel_147E_01k_'
+ gencost_outputlevel(112) = 0,
+ mult_gencost(112)        = 1,
+#
+ gencost_name(113)        = 'vvel_147E_02k',
+ gencost_avgperiod(113)   = 'const',
+ gencost_barfile(113)     = 'm_horflux_vol',
+ gencost_mask(113)        = 'masks_all_lon_vvel/vvel_147E_02k_'
+ gencost_outputlevel(113) = 0,
+ mult_gencost(113)        = 1,
+#
+ gencost_name(114)        = 'vvel_147E_03k',
+ gencost_avgperiod(114)   = 'const',
+ gencost_barfile(114)     = 'm_horflux_vol',
+ gencost_mask(114)        = 'masks_all_lon_vvel/vvel_147E_03k_'
+ gencost_outputlevel(114) = 0,
+ mult_gencost(114)        = 1,
+#
+ gencost_name(115)        = 'vvel_147E_04k',
+ gencost_avgperiod(115)   = 'const',
+ gencost_barfile(115)     = 'm_horflux_vol',
+ gencost_mask(115)        = 'masks_all_lon_vvel/vvel_147E_04k_'
+ gencost_outputlevel(115) = 0,
+ mult_gencost(115)        = 1,
+#
+ gencost_name(116)        = 'vvel_147E_05k',
+ gencost_avgperiod(116)   = 'const',
+ gencost_barfile(116)     = 'm_horflux_vol',
+ gencost_mask(116)        = 'masks_all_lon_vvel/vvel_147E_05k_'
+ gencost_outputlevel(116) = 0,
+ mult_gencost(116)        = 1,
+#
+ gencost_name(117)        = 'vvel_147E_06k',
+ gencost_avgperiod(117)   = 'const',
+ gencost_barfile(117)     = 'm_horflux_vol',
+ gencost_mask(117)        = 'masks_all_lon_vvel/vvel_147E_06k_'
+ gencost_outputlevel(117) = 0,
+ mult_gencost(117)        = 1,
+#
+ gencost_name(118)        = 'vvel_147E_07k',
+ gencost_avgperiod(118)   = 'const',
+ gencost_barfile(118)     = 'm_horflux_vol',
+ gencost_mask(118)        = 'masks_all_lon_vvel/vvel_147E_07k_'
+ gencost_outputlevel(118) = 0,
+ mult_gencost(118)        = 1,
+#
+ gencost_name(119)        = 'vvel_147E_08k',
+ gencost_avgperiod(119)   = 'const',
+ gencost_barfile(119)     = 'm_horflux_vol',
+ gencost_mask(119)        = 'masks_all_lon_vvel/vvel_147E_08k_'
+ gencost_outputlevel(119) = 0,
+ mult_gencost(119)        = 1,
+#
+ gencost_name(120)        = 'vvel_147E_09k',
+ gencost_avgperiod(120)   = 'const',
+ gencost_barfile(120)     = 'm_horflux_vol',
+ gencost_mask(120)        = 'masks_all_lon_vvel/vvel_147E_09k_'
+ gencost_outputlevel(120) = 0,
+ mult_gencost(120)        = 1,
+#
+ gencost_name(121)        = 'vvel_147E_10k',
+ gencost_avgperiod(121)   = 'const',
+ gencost_barfile(121)     = 'm_horflux_vol',
+ gencost_mask(121)        = 'masks_all_lon_vvel/vvel_147E_10k_'
+ gencost_outputlevel(121) = 0,
+ mult_gencost(121)        = 1,
+#
+ gencost_name(122)        = 'vvel_147E_11k',
+ gencost_avgperiod(122)   = 'const',
+ gencost_barfile(122)     = 'm_horflux_vol',
+ gencost_mask(122)        = 'masks_all_lon_vvel/vvel_147E_11k_'
+ gencost_outputlevel(122) = 0,
+ mult_gencost(122)        = 1,
+#
+ gencost_name(123)        = 'vvel_147E_12k',
+ gencost_avgperiod(123)   = 'const',
+ gencost_barfile(123)     = 'm_horflux_vol',
+ gencost_mask(123)        = 'masks_all_lon_vvel/vvel_147E_12k_'
+ gencost_outputlevel(123) = 0,
+ mult_gencost(123)        = 1,
+#
+ gencost_name(124)        = 'vvel_147E_13k',
+ gencost_avgperiod(124)   = 'const',
+ gencost_barfile(124)     = 'm_horflux_vol',
+ gencost_mask(124)        = 'masks_all_lon_vvel/vvel_147E_13k_'
+ gencost_outputlevel(124) = 0,
+ mult_gencost(124)        = 1,
+#
+ gencost_name(125)        = 'vvel_147E_14k',
+ gencost_avgperiod(125)   = 'const',
+ gencost_barfile(125)     = 'm_horflux_vol',
+ gencost_mask(125)        = 'masks_all_lon_vvel/vvel_147E_14k_'
+ gencost_outputlevel(125) = 0,
+ mult_gencost(125)        = 1,
+#
+ gencost_name(126)        = 'vvel_147E_15k',
+ gencost_avgperiod(126)   = 'const',
+ gencost_barfile(126)     = 'm_horflux_vol',
+ gencost_mask(126)        = 'masks_all_lon_vvel/vvel_147E_15k_'
+ gencost_outputlevel(126) = 0,
+ mult_gencost(126)        = 1,
+#
+ gencost_name(127)        = 'vvel_147E_16k',
+ gencost_avgperiod(127)   = 'const',
+ gencost_barfile(127)     = 'm_horflux_vol',
+ gencost_mask(127)        = 'masks_all_lon_vvel/vvel_147E_16k_'
+ gencost_outputlevel(127) = 0,
+ mult_gencost(127)        = 1,
+#
+ gencost_name(128)        = 'vvel_147E_17k',
+ gencost_avgperiod(128)   = 'const',
+ gencost_barfile(128)     = 'm_horflux_vol',
+ gencost_mask(128)        = 'masks_all_lon_vvel/vvel_147E_17k_'
+ gencost_outputlevel(128) = 0,
+ mult_gencost(128)        = 1,
+#
+ gencost_name(129)        = 'vvel_147E_18k',
+ gencost_avgperiod(129)   = 'const',
+ gencost_barfile(129)     = 'm_horflux_vol',
+ gencost_mask(129)        = 'masks_all_lon_vvel/vvel_147E_18k_'
+ gencost_outputlevel(129) = 0,
+ mult_gencost(129)        = 1,
+#
+ gencost_name(130)        = 'vvel_147E_19k',
+ gencost_avgperiod(130)   = 'const',
+ gencost_barfile(130)     = 'm_horflux_vol',
+ gencost_mask(130)        = 'masks_all_lon_vvel/vvel_147E_19k_'
+ gencost_outputlevel(130) = 0,
+ mult_gencost(130)        = 1,
+#
+ gencost_name(131)        = 'vvel_147E_20k',
+ gencost_avgperiod(131)   = 'const',
+ gencost_barfile(131)     = 'm_horflux_vol',
+ gencost_mask(131)        = 'masks_all_lon_vvel/vvel_147E_20k_'
+ gencost_outputlevel(131) = 0,
+ mult_gencost(131)        = 1,
+#
+ gencost_name(132)        = 'vvel_147E_21k',
+ gencost_avgperiod(132)   = 'const',
+ gencost_barfile(132)     = 'm_horflux_vol',
+ gencost_mask(132)        = 'masks_all_lon_vvel/vvel_147E_21k_'
+ gencost_outputlevel(132) = 0,
+ mult_gencost(132)        = 1,
+#
+ /

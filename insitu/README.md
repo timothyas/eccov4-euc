@@ -23,6 +23,11 @@ script
 - Make sure find and replace `sed` command ends with `/g` in order to get all
   instances...
 
+## TRITON Array
+
+Same idea, but use the identifier `TRITON (TRIANGLE TRANS-OCEAN BUOY NETWORK)`.
+See `get_triton.sh`.
+
 ### Location data only
 
 To get just the location data from the csv files, use `grep`.
